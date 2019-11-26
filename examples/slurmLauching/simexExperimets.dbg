@@ -1,0 +1,20 @@
+Experiment                                    Instance                            Status
+----------                                    --------                            ------
+merge-sort ~ bba-insertion, bbs1              uniform-n1000-s1                    [0] failed
+merge-sort ~ bba-insertion, bbs1              uniform-n1000-s2                    [0] failed
+merge-sort ~ bba-insertion, bbs1              uniform-n1000-s3                    [0] failed
+merge-sort ~ bba-insertion, bbs10             uniform-n1000-s1                    [0] failed
+merge-sort ~ bba-insertion, bbs10             uniform-n1000-s2                    [0] failed
+merge-sort ~ bba-insertion, bbs10             uniform-n1000-s3                    [0] failed
+merge-sort ~ bba-insertion, bbs50             uniform-n1000-s1                    [0] failed
+merge-sort ~ bba-insertion, bbs50             uniform-n1000-s2                    [0] failed
+merge-sort ~ bba-insertion, bbs50             uniform-n1000-s3                    [0] failed
+merge-sort ~ bba-selection, bbs1              uniform-n1000-s1                    [0] failed
+merge-sort ~ bba-selection, bbs1              uniform-n1000-s2                    [0] failed
+merge-sort ~ bba-selection, bbs1              uniform-n1000-s3                    [0] failed
+merge-sort ~ bba-selection, bbs10             uniform-n1000-s1                    [0] failed
+merge-sort ~ bba-selection, bbs10             uniform-n1000-s2                    [0] failed
+merge-sort ~ bba-selection, bbs10             uniform-n1000-s3                    [0] failed
+merge-sort ~ bba-selection, bbs50             uniform-n1000-s1                    [0] failed
+merge-sort ~ bba-selection, bbs50             uniform-n1000-s2                    [0] failed
+merge-sort ~ bba-selection, bbs50             uniform-n1000-s3                    [0] failed

@@ -1,0 +1,34 @@
+instances:
+  - generator:
+      args: ['./generate.py', '--seed=1', '1000']
+    items:
+      - uniform-n1000-s1
+  - generator:
+      args: ['./generate.py', '--seed=2', '1000']
+    items:
+      - uniform-n1000-s2
+  - generator:
+      args: ['./generate.py', '--seed=3', '1000']
+    items:
+      - uniform-n1000-s3
+
+experiments:
+  - name: 'merge-sort'
+    output: stdout
+    args: ['python3', 'sort.py', '--algo=insertion-sort', '@EXTRA_ARGS@', '@INSTANCE@']
+
+variants:
+  - axis: 'block-size'
+    items:
+      - name: 'bbs1'
+        extra_args: ['--base-block-size=1']
+      - name: 'bbs10'
+        extra_args: ['--base-block-size=10']
+      - name: 'bbs50'
+        extra_args: ['--base-block-size=50']
+  - axis: 'block-algo'
+    items:
+      - name: 'bba-insertion'
+        extra_args: ['--base-block-algorithm=insertion-sort']
+      - name: 'bba-selection'
+        extra_args: ['--base-block-algorithm=selection-sort']

@@ -1,0 +1,5 @@
+launchers:
+  - name: local-cluster
+    default: true
+    scheduler: slurm
+

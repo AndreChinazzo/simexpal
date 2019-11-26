@@ -1,0 +1,20 @@
+From https://github.com/networkit/networkit
+ * [new branch]      master     -> simexpal-rev/rev0
+git: 'worktree' is not a git command. See 'git --help'.
+simexpal: Using pure Python YAML parser. Installing libyaml will improve performance.
+simexpal: Making builds networkit @ rev0
+simexpal: Running checkout-phase for build networkit
+Traceback (most recent call last):
+  File "/home/chinazzo/.local/bin/simex", line 6, in <module>
+    exec(compile(open(__file__).read(), __file__, 'exec'))
+  File "/home/chinazzo/Projects/bigdata/phase2/simexpal/scripts/simex", line 565, in <module>
+    main_args.cmd(main_args)
+  File "/home/chinazzo/Projects/bigdata/phase2/simexpal/scripts/simex", line 197, in do_builds_make
+    [build.info for build in cfg.all_builds_for_revision(revision)])
+  File "/home/chinazzo/Projects/bigdata/phase2/simexpal/simexpal/build.py", line 14, in make_builds
+    make_build_in_order(cfg, cfg.get_build(info.name, revision))
+  File "/home/chinazzo/Projects/bigdata/phase2/simexpal/simexpal/build.py", line 189, in make_build_in_order
+    'worktree', 'prune'])
+  File "/usr/lib64/python3.6/subprocess.py", line 311, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '--git-dir', '/home/chinazzo/Projects/bigdata/phase2/simexpal/examples/building/builds/networkit.repo', 'worktree', 'prune']' returned non-zero exit status 1.

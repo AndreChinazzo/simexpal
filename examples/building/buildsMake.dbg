@@ -1,0 +1,24 @@
+Cloning into '/home/chinazzo/Projects/bigdata/phase2/simexpal/examples/building/builds/networkit@rev0.clone'...
+Checking out files:  38% (390/1006)   Checking out files:  39% (393/1006)   Checking out files:  40% (403/1006)   Checking out files:  41% (413/1006)   Checking out files:  42% (423/1006)   Checking out files:  43% (433/1006)   Checking out files:  44% (443/1006)   Checking out files:  45% (453/1006)   Checking out files:  46% (463/1006)   Checking out files:  47% (473/1006)   Checking out files:  48% (483/1006)   Checking out files:  49% (493/1006)   Checking out files:  50% (503/1006)   Checking out files:  51% (514/1006)   Checking out files:  52% (524/1006)   Checking out files:  53% (534/1006)   Checking out files:  54% (544/1006)   Checking out files:  55% (554/1006)   Checking out files:  56% (564/1006)   Checking out files:  57% (574/1006)   Checking out files:  58% (584/1006)   Checking out files:  59% (594/1006)   Checking out files:  59% (598/1006)   Checking out files:  60% (604/1006)   Checking out files:  61% (614/1006)   Checking out files:  62% (624/1006)   Checking out files:  63% (634/1006)   Checking out files:  64% (644/1006)   Checking out files:  65% (654/1006)   Checking out files:  66% (664/1006)   Checking out files:  67% (675/1006)   Checking out files:  68% (685/1006)   Checking out files:  69% (695/1006)   Checking out files:  70% (705/1006)   Checking out files:  71% (715/1006)   Checking out files:  72% (725/1006)   Checking out files:  73% (735/1006)   Checking out files:  74% (745/1006)   Checking out files:  75% (755/1006)   Checking out files:  76% (765/1006)   Checking out files:  77% (775/1006)   Checking out files:  78% (785/1006)   Checking out files:  79% (795/1006)   Checking out files:  80% (805/1006)   Checking out files:  81% (815/1006)   Checking out files:  82% (825/1006)   Checking out files:  83% (835/1006)   Checking out files:  84% (846/1006)   Checking out files:  85% (856/1006)   Checking out files:  86% (866/1006)   Checking out files:  87% (876/1006)   Checking out files:  88% (886/1006)   Checking out files:  89% (896/1006)   Checking out files:  90% (906/1006)   Checking out files:  91% (916/1006)   Checking out files:  92% (926/1006)   Checking out files:  93% (936/1006)   Checking out files:  94% (946/1006)   Checking out files:  95% (956/1006)   Checking out files:  96% (966/1006)   Checking out files:  97% (976/1006)   Checking out files:  98% (986/1006)   Checking out files:  99% (996/1006)   Checking out files: 100% (1006/1006)   Checking out files: 100% (1006/1006), done.
+Switched to a new branch 'master'
+Branch master set up to track remote branch master from origin.
+simexpal: Making builds networkit @ rev0
+simexpal: Running checkout-phase for build networkit
+simexpal: Running regenerate-phase for build networkit
+simexpal: Running configure-phase for build networkit
+Traceback (most recent call last):
+  File "/home/chinazzo/.local/bin/simex", line 447, in <module>
+    do_main()
+  File "/home/chinazzo/.local/bin/simex", line 45, in do_main
+    do_builds(args)
+  File "/home/chinazzo/.local/bin/simex", line 176, in do_builds
+    do_builds_build(args)
+  File "/home/chinazzo/.local/bin/simex", line 187, in do_builds_build
+    [build.info for build in cfg.all_builds_for_revision(revision)])
+  File "/home/chinazzo/.local/lib/python3.6/site-packages/simexpal/build.py", line 14, in make_builds
+    make_build_in_order(cfg, cfg.get_build(info.name, revision))
+  File "/home/chinazzo/.local/lib/python3.6/site-packages/simexpal/build.py", line 161, in make_build_in_order
+    do_step(step_yml, workdir=build.compile_dir)
+  File "/home/chinazzo/.local/lib/python3.6/site-packages/simexpal/build.py", line 127, in do_step
+    args = [util.expand_at_params(arg, substitute) for arg in step_yml['args']]
+TypeError: string indices must be integers
